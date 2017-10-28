@@ -1,0 +1,36 @@
+var MENU_EN = {
+	pageTitle: 'Freight Machina'
+}
+
+var FREIGHT_EN = {
+	id: '00',
+	name: 'Pretty Cargo',
+	imgURL: 'http://lorempixel.com/80/80/cats/',
+	owner: 'Ivan Ivanovich' //KEY
+
+	weight: '1kg',
+	height: '1m',
+	width:	'1m',
+	depth:	'1m',
+
+	origin: 'Cuenca',
+	destination: 'Cartagena',
+}
+
+var MACHINA_EN = {
+	id: '00',
+	name: 'Sweet ride',
+	imgURL: 'http://lorempixel.com/400/200/transport',
+	
+	type: 'Van',
+	model: 'Volvo'
+}
+
+var USER_EN = {
+	id: '01',
+	name: 'Ivan Ivanovich',
+}
+
+var RESULTS_EN = {
+	
+}

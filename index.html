@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		
+		<script src="https://fb.me/react-0.14.6.js"></script>
+		<script src="https://fb.me/react-dom-0.14.6.js"></script>
+		<script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
 	<title>Cristian T. Duque</title>
-  </head>
-  <body>
-	<h1>Hello, Code School!</h1>
-	<ul>
-		<li>Stupidity</li>
-		<li>Idiocy</li>
-	</ul>
-  </body>
+	</head>
+	<body>
+		<script>
+			var App = React.createClass({
+				render:function(){
+					return(
+						<!-- Insert Site Here -->
+					)
+				}
+			})
+			ReactDOM.render(<App />, document.getElementById('content'));
+		</script>
+		<div id='content'></div>
+	</body>
 </html>
+<style>
+	* {
+		font-family: Lucida Sans Unicode;
+	}
+
+	article {
+		display: grid;
+		
+		grid-template-columns: 1fr;
+		max-witdh: 50em;
+		grid-row-gap: 10px;
+
+	}
+</style>
