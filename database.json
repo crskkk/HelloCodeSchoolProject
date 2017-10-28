@@ -23,7 +23,7 @@ var MACHINA_EN = {
 	imgURL: 'http://lorempixel.com/400/200/transport',
 	
 	type: 'Van',
-	model: 'Volvo'
+	model: 'Volvo',+****
 }
 
 var USER_EN = {
