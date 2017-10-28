@@ -5,46 +5,55 @@
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		
+		<!-- Google Fonts + Material -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans"> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		
+		<!-- React -->
 		<script src="https://fb.me/react-0.14.6.js"></script>
 		<script src="https://fb.me/react-dom-0.14.6.js"></script>
 		<script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
 	<title>TITLE Freight</title>
 	</head>
-	<body>BODY
-		<script>
-			var App = React.createClass({render:function(){return(<p>Hola</p> ) } });
-		</script>
-	
-		<header>HEADER
+	<body>
+		<header  class="mdl-layout__header">
 			<div id="hamburgerIcon"></div>
 			<div id="pageTitle">Freight Machina</div>
 			<div id="refreshIcon"></div>
 			<div id="settingsIcon"></div>
 		</header>
-		
-		<nav>NAV
+		<nav>
 			<div>DIV Home</div>
 			<div>DIV Freight</div>
 			<div>DIV Machina</div>
-			<div>DIV User</div>
-		
+			<div>DIV User</div>		
 		</nav>
-		<article id="resultsPage">ARTICLE
-			<div id="resultsPageTitle">Results</div>
-			<section id="result01">SECTION
-				<div id='content'></div>			
+		<article>
+			<section>
+				<div id="content"></div>
 			</section>
 		</article>
 		<aside>ASIDE Help</aside>
-
-		<script>
-			
+		<script type="text/jsx">
+			/*Add your React code here*/
+			var DATA = {}
+			var App = React.createClass({
+				render: function(){
+					return (
+						<div> Ola!
+						</div>
+					);
+				}
+			});
+			ReactDOM.render(<App profileData={DATA} />, document.getElementById('content'));
 		</script>
 	</body>
 </html>
 <style>
 * {
-	font-family: sans-serif;	
+    font-family: 'PT Sans', sans-serif;
 }
 
 *:hover {
@@ -79,14 +88,14 @@ nav div:nth-child(odd){
 nav {
 	grid-column: 1 / 3;
 	display: grid;
-	grid-template-columns: auto 1fr 1fr 1fr 1fr;
+	grid-template-columns: auto 1fr 1fr 1fr;
 }
 
 nav div {
 	
 }
 
-section {
+section, aside {
     padding: 70px 0;
     text-align: center;
 }
